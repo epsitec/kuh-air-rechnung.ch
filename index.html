@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Die QR-Rechnung aus Sicht eines Softwareentwicklers</title>
+  <title>La facture QR du point de vue du développeur</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://static.sharedbox.com/assets/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -11,36 +11,35 @@
 <body>
   <div id="container">
     <header>
-      <h1>Die QR-Rechnung aus Sicht eines Softwareentwicklers</h1>
+      <h1>La facture QR du point de vue du développeur</h1>
     </header>
     <div class="content">
       <div class="row">
         <div class="colonne w50">
           <p>
-            Die QR-Rechnung (Aussprache <i>Kuh-Air-Bill</i>) enthält einen
-            Einzahlungsschein, der mit einem QR-Code versehen ist.
+            La facture QR comporte un bulletin de versement qui est muni d'un code QR.
           </p>
           <p>
-            Die <b>Spezifikationen</b> dazu sind in mehreren Dokumenten der SIX aufgeteilt:
+            Les <b>spécifications</b> sont détaillées dans plusieurs documents publiés par SIX&nbsp;:
           </p>
           <ul>
-            <li><a href="https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-de.pdf" target="_blank">Schweizer Implementation Guidelines QR-Rechnung</a>.</li>
-            <li><a href="https://www.six-interbank-clearing.com/dam/downloads/de/standardization/iso/swiss-recommendations/implementation-guidelines-ct.pdf" target="_blank">Schweizer Implementation Guidelines für Kunde-Bank-Meldungen für Überweisungen im Zahlungsverkehr (pain.001)</a>.</li>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-fr.pdf" target="_blank">Implementation Guidelines suisses pour QR-facture</a>.</li>
+            <li><a href="https://www.six-interbank-clearing.com/dam/downloads/fr/standardization/iso/swiss-recommendations/implementation-guidelines-ct.pdf" target="_blank">Implementation Guidelines suisses pour les messages client-banque pour les virements dans le trafic des paiements (pain.001)</a>.</li>
           </ul>
           <p>
-            Die <b>Syntax der Rechnungstellerdaten</b> (##S1) wird von der Swico definiert. Diese Daten
-            sind für die Software des Rechnungsempfänger wichtig: sie ergänzen den QR-Code
-            mit nützlichen Informationen zur Rechnung und MWST.
+            La <b>syntaxe des données d'émetteurs</b> (##S1) est définie par Swico. Ces données
+            sont utiles aux logiciels des débiteurs&nbsp;: elles complètent le code QR avec des
+            informations pertinentes sur la facture et la TVA.
           </p>
         </div>
         <div class="colonne w50">
-          <img src="images/swiss-cow.svg" alt="Kuh-Air-Bill" title="Schweizer Kuh mit QR-Code" id="swiss-cow" />
+          <img src="images/swiss-cow.svg" alt="Kuh-Air-Bill" title="Vache suisse avec code QR" id="swiss-cow" />
         </div>
         <div class="clearfix"></div>
       </div>
       <div class="row">
         <div class="colonne w50" style="position: relative;">
-          <a href="downloads/Swico_Strukturierte-Referenz_Syntaxdefinition_V1_1_DE.pdf" target="_blank" class="button" title="Download der ##S1 Syntaxdefinition (PDF)"><i class="fa fa-angle-down" aria-hidden="true"></i>Download der ##S1 Syntaxdefinition V1.1</a>
+          <a href="downloads/Swico_Strukturierte-Referenz_Syntaxdefinition_V1_1_FR.pdf" target="_blank" class="button" title="Télécharger la définition de la syntaxe ##S1 (PDF)"><i class="fa fa-angle-down" aria-hidden="true"></i>Télécharger la syntaxe ##S1 V1.1</a>
         </div>
         <div class="colonne w50">
         </div>
@@ -48,8 +47,7 @@
       </div>
       <div class="row">
         <p>
-          Achtung, der <b>Anhang B: Überschriften mehrsprachig</b> der IG V1.0 (27.04.2017) enthält
-          noch Übersetzungsfehler.
+          Attention, l'<b>Annexe B: Titres en plusieurs langues</b> des IG V1.0 (27.04.2017) comprend des coquilles.
           <br/>
           <br/>
           &nbsp;
@@ -57,7 +55,7 @@
       </div>
       <div class="row">
           <p>
-            Weitere Links:
+            Autres liens&nbsp;:
             <a href="https://www.six-interbank-clearing.com/en/home/standardization/ebics.html" target="_blank">EBICS Swiss Recommendations</a> |
             <a href="downloads/EBICS-INI-Letter-Proposal_V0_1.pdf" target="_blank">EBICS INI-Procedure (Proposal)</a> |
             <a href="downloads/EBICS-INI-Letter_Example_V0_1.pdf" target="_blank">EBICS INI-Letter (Example)</a>
@@ -69,12 +67,21 @@
           <p>Copyright © 2017 – Pierre Arnaud, Epsitec SA, Yverdon-les-Bains</p>
         </div>
         <div class="colonne w50 txt-right">
-          <a href="http://www.facture-qr.ch" style="background: #ccc; padding: .5em; color: #fff; border-radius: 2px;">FR</a>
-          <a href="#" style="background: #0d4c80; padding: .5em; color: #fff; border-radius: 2px;">DE</a>
+          <a href="#" style="background: #0d4c80; padding: .5em; color: #fff; border-radius: 2px;">FR</a>
+          <a href="http://www.kuh-air-rechnung.ch" style="background: #ccc; padding: .5em; color: #fff; border-radius: 2px;">DE</a>
         </div>
         <div class="clearfix"></div>
       </div>
     </footer>  
   </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-446301-6', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>
